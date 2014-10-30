@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-class Artikel extends \Eloquent {
+class Konfig extends \Eloquent  {
 	
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'artikel';
+	protected $table = 'config';
         
         public function kategori(){
             return $this->belongsTo('App\Models\Kategori');
